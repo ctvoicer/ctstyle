@@ -1,0 +1,20 @@
+.tabs {
+  margin-bottom: -1px !important;
+}
+
+.tab-content {
+  padding: 60px;
+  color: #000;
+  background-color: white;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tabs.is-tabs-menu a {
+  color: #fff;
+}
+.tabs.is-tabs-menu a:hover {
+  color: #979797;
+}

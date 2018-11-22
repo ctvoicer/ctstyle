@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CTStyle</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="../css/ctstyle.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header include-html="includes/header.html"></header>
+
+    <section class="has-background-danger">
+      <div class="section">
+        <div class="container">
+          <h1 class="title has-text-white">Components</h1>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs is-boxed is-centered is-tabs-menu" id="nav">
+        <ul>
+          <li data-target="breadcrumb_tab" id="breadcrumb">
+            <a>Breadcrumb</a>
+          </li>
+          <li data-target="card_tab" id="card">
+            <a>Card</a>
+          </li>
+          <li data-target="dropdown_tab" id="dropdown">
+            <a>Dropdown</a>
+          </li>
+          <li data-target="menu_tab" id="menu">
+            <a>Menu</a>
+          </li>
+          <li data-target="message_tab" id="message">
+            <a>Message</a>
+          </li>
+          <li data-target="modal_tab" id="modal">
+            <a>Modal</a>
+          </li>
+          <li data-target="navbar_tab" id="navbar">
+            <a>Navbar</a>
+          </li>
+          <li data-target="pagination_tab" id="pagination">
+            <a>Pagination</a>
+          </li>
+          <li data-target="panel_tab" id="panel">
+            <a>Panel</a>
+          </li>
+          <li data-target="tabs_tab" id="tabs">
+            <a>Tabs</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Tab content -->
+      <div class="tab-content">
+        <div class="container">
+          <div class="tab-pane" id="breadcrumb_tab" include-html="components/breadcrumb.html"></div>
+          <div class="tab-pane" id="card_tab" include-html="components/card.html"></div>
+          <div class="tab-pane" id="dropdown_tab" include-html="components/dropdown.html"></div>
+          <div class="tab-pane" id="menu_tab" include-html="components/menu.html"></div>
+          <div class="tab-pane" id="message_tab" include-html="components/message.html"></div>
+          <div class="tab-pane" id="modal_tab" include-html="components/modal.html"></div>
+          <div class="tab-pane" id="navbar_tab" include-html="components/navbar.html"></div>
+          <div class="tab-pane" id="pagination_tab" include-html="components/pagination.html"></div>
+          <div class="tab-pane" id="panel_tab" include-html="components/panel.html"></div>
+          <div class="tab-pane" id="tabs_tab" include-html="components/tabs.html"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
