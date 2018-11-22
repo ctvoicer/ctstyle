@@ -10,8 +10,10 @@
     "start": "npm run css-watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "bulma": "^0.7.2"
+  },
   "devDependencies": {
-    "bulma": "^0.7.2",
     "node-sass": "^4.10.0"
   }
 }
