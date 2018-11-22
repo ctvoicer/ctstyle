@@ -1,0 +1,17 @@
+{
+  "name": "ctstyle",
+  "version": "1.0.0",
+  "description": "Uma customização do framework CSS Bulma",
+  "author": "CTVoicer <falecom@ctvoicer.com.br>",
+  "main": "sass/ctstyle.sass",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url --output-style compact sass/ctstyle.sass css/ctstyle.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "bulma": "^0.7.2",
+    "node-sass": "^4.10.0"
+  }
+}
