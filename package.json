@@ -5,15 +5,18 @@
   "author": "CTVoicer <falecom@ctvoicer.com.br>",
   "main": "sass/ctstyle.sass",
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url --output-style compact sass/ctstyle.sass css/ctstyle.css",
+    "css-build": "node-sass --output-style compact sass/ctstyle.sass css/ctstyle.css --importer=node_modules/node-sass-tilde-importer",
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
   },
   "dependencies": {
     "bulma": "^0.7.2"
   },
   "devDependencies": {
-    "node-sass": "^4.10.0"
+    "node-sass": "^4.10.0",
+    "node-sass-tilde-importer": "^1.0.2",
+    "standard-version": "^4.4.0"
   }
 }
