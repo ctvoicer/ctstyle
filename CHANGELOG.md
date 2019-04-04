@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://ssh.dev.azure.com/v3/CTVoicer/CTStyle/CTStyle/compare/v1.0.2...v1.1.0) (2019-04-04)
+
+
+### Features
+
+* 🎸 adiciona um estilo específico para os logotipos ([fe33ab4](https://ssh.dev.azure.com/v3/CTVoicer/CTStyle/CTStyle/commits/fe33ab4))
+* 🎸 upgrade do Bulma para a versão 0.7.4 ([18cd25d](https://ssh.dev.azure.com/v3/CTVoicer/CTStyle/CTStyle/commits/18cd25d))
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://ssh.dev.azure.com/v3/CTVoicer/CTStyle/CTStyle/compare/v1.0.1...v1.0.2) (2018-11-23)
 

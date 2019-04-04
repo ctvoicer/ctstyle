@@ -1,6 +1,6 @@
 {
   "name": "ctstyle",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Uma customização do framework CSS Bulma",
   "author": "CTVoicer <falecom@ctvoicer.com.br>",
   "main": "sass/ctstyle.sass",
