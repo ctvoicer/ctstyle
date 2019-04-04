@@ -12,10 +12,10 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "bulma": "^0.7.2"
+    "bulma": "^0.7.4"
   },
   "devDependencies": {
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.11.0",
     "node-sass-tilde-importer": "^1.0.2",
     "standard-version": "^4.4.0"
   }
