@@ -1,6 +1,6 @@
 {
   "name": "@ctvoicer/ctstyle",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Bulma CSS framework customization for CTVoicer products",
   "author": "CTVoicer <contato@ctvoicer.com.br>",
   "main": "css/ctstyle.css",
@@ -17,6 +17,6 @@
   "devDependencies": {
     "node-sass": "^4.11.0",
     "node-sass-tilde-importer": "^1.0.2",
-    "standard-version": "^4.4.0"
+    "standard-version": "^5.0.2"
   }
 }
