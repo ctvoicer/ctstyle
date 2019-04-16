@@ -1,9 +1,9 @@
 {
-  "name": "ctstyle",
+  "name": "@ctvoicer/ctstyle",
   "version": "1.1.0",
-  "description": "Uma customização do framework CSS Bulma",
-  "author": "CTVoicer <falecom@ctvoicer.com.br>",
-  "main": "sass/ctstyle.sass",
+  "description": "A Bulma CSS framework customization for CTVoicer products",
+  "author": "CTVoicer <contato@ctvoicer.com.br>",
+  "main": "css/ctstyle.css",
   "scripts": {
     "css-build": "node-sass --output-style compact sass/ctstyle.sass css/ctstyle.css --importer=node_modules/node-sass-tilde-importer",
     "css-watch": "npm run css-build -- --watch",
