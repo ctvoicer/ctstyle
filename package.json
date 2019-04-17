@@ -5,9 +5,8 @@
   "author": "CTVoicer <contato@ctvoicer.com.br>",
   "main": "css/ctstyle.css",
   "scripts": {
-    "css-build": "node-sass --output-style compact sass/ctstyle.sass css/ctstyle.css --importer=node_modules/node-sass-tilde-importer",
-    "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch",
+    "build": "node-sass --output-style compact sass/ctstyle.sass css/ctstyle.css --importer=node_modules/node-sass-tilde-importer",
+    "start": "npm run build -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "standard-version"
   },
