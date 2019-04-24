@@ -7,7 +7,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development --watch",
-    "docs": "cp ./dist/ctstyle.css ./docs/ctstyle.css && http-server ./docs -c-1 -p 3000",
+    "link": "[ -L ./docs/assets ] || ln -s ../dist ./docs/assets",
+    "serve": "npm run link && http-server ./docs -c-1 -p 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
