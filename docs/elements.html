@@ -1,83 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CTStyle</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <link rel="stylesheet" href="../css/ctstyle.css">
-    <link rel="stylesheet" href="styles.css">
-  </head>
 
-  <body>
-    <header include-html="includes/header.html"></header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CTStyle</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="ctstyle.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-    <section class="has-background-danger">
+<body>
+  <header include-html="_header.html"></header>
+
+  <section class="has-background-danger">
+    <div class="container">
       <div class="section">
-        <div class="container">
-          <h1 class="title has-text-white">Elements</h1>
-        </div>
+        <h1 class="title has-text-white">Elements</h1>
       </div>
+    </div>
 
-      <!-- Tabs -->
-      <div class="tabs is-boxed is-centered is-tabs-menu" id="nav">
-        <ul>
-          <li data-target="box_tab" id="box">
-            <a>Box</a>
-          </li>
-          <li data-target="button_tab" id="button">
-            <a>Button</a>
-          </li>
-          <li data-target="content_tab" id="content">
-            <a>Content</a>
-          </li>
-          <li data-target="delete_tab" id="delete">
-            <a>Delete</a>
-          </li>
-          <li data-target="icon_tab" id="icon">
-            <a>Icon</a>
-          </li>
-          <li data-target="image_tab" id="image">
-            <a>Image</a>
-          </li>
-          <li data-target="notification_tab" id="notification">
-            <a>Notification</a>
-          </li>
-          <li data-target="progress-bars_tab" id="progress-bars">
-            <a>Progress bars</a>
-          </li>
-          <li data-target="table_tab" id="table">
-            <a>Table</a>
-          </li>
-          <li data-target="tag_tab" id="tag">
-            <a>Tag</a>
-          </li>
-          <li data-target="title_tab" id="title">
-            <a>Title</a>
-          </li>
-        </ul>
+    <!-- Tabs -->
+    <div class="tabs is-boxed is-centered is-tabs-menu" id="nav">
+      <ul>
+        <li data-target="box_tab" id="box">
+          <a>Box</a>
+        </li>
+        <li data-target="button_tab" id="button">
+          <a>Button</a>
+        </li>
+        <li data-target="content_tab" id="content">
+          <a>Content</a>
+        </li>
+        <li data-target="delete_tab" id="delete">
+          <a>Delete</a>
+        </li>
+        <li data-target="icon_tab" id="icon">
+          <a>Icon</a>
+        </li>
+        <li data-target="image_tab" id="image">
+          <a>Image</a>
+        </li>
+        <li data-target="notification_tab" id="notification">
+          <a>Notification</a>
+        </li>
+        <li data-target="progress-bars_tab" id="progress-bars">
+          <a>Progress bars</a>
+        </li>
+        <li data-target="table_tab" id="table">
+          <a>Table</a>
+        </li>
+        <li data-target="tag_tab" id="tag">
+          <a>Tag</a>
+        </li>
+        <li data-target="title_tab" id="title">
+          <a>Title</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Tab content -->
+    <div class="tab-content">
+      <div class="container">
+        <div class="tab-pane" id="box_tab" include-html="elements/box.html"></div>
+        <div class="tab-pane" id="button_tab" include-html="elements/button.html"></div>
+        <div class="tab-pane" id="content_tab" include-html="elements/content.html"></div>
+        <div class="tab-pane" id="delete_tab" include-html="elements/delete.html"></div>
+        <div class="tab-pane" id="icon_tab" include-html="elements/icon.html"></div>
+        <div class="tab-pane" id="image_tab" include-html="elements/image.html"></div>
+        <div class="tab-pane" id="notification_tab" include-html="elements/notification.html"></div>
+        <div class="tab-pane" id="progress-bars_tab" include-html="elements/progress-bars.html"></div>
+        <div class="tab-pane" id="table_tab" include-html="elements/table.html"></div>
+        <div class="tab-pane" id="tag_tab" include-html="elements/tag.html"></div>
+        <div class="tab-pane" id="title_tab" include-html="elements/title.html"></div>
       </div>
+    </div>
+  </section>
 
-      <!-- Tab content -->
-      <div class="tab-content">
-        <div class="container">
-          <div class="tab-pane" id="box_tab" include-html="elements/box.html"></div>
-          <div class="tab-pane" id="button_tab" include-html="elements/button.html"></div>
-          <div class="tab-pane" id="content_tab" include-html="elements/content.html"></div>
-          <div class="tab-pane" id="delete_tab" include-html="elements/delete.html"></div>
-          <div class="tab-pane" id="icon_tab" include-html="elements/icon.html"></div>
-          <div class="tab-pane" id="image_tab" include-html="elements/image.html"></div>
-          <div class="tab-pane" id="notification_tab" include-html="elements/notification.html"></div>
-          <div class="tab-pane" id="progress-bars_tab" include-html="elements/progress-bars.html"></div>
-          <div class="tab-pane" id="table_tab" include-html="elements/table.html"></div>
-          <div class="tab-pane" id="tag_tab" include-html="elements/tag.html"></div>
-          <div class="tab-pane" id="title_tab" include-html="elements/title.html"></div>
-        </div>
-      </div>
-    </section>
+  <script src="scripts.js"></script>
+</body>
 
-    <script src="scripts.js"></script>
-  </body>
 </html>

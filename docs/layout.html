@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CTStyle</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <link rel="stylesheet" href="../css/ctstyle.css">
-    <link rel="stylesheet" href="styles.css">
-  </head>
 
-  <body>
-    <header include-html="includes/header.html"></header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CTStyle</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="ctstyle.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-    <section class="has-background-danger">
+<body>
+  <header include-html="_header.html"></header>
+
+  <section class="has-background-danger">
+    <div class="container">
       <div class="section">
-        <div class="container">
-          <h1 class="title has-text-white">Layout</h1>
-        </div>
+        <h1 class="title has-text-white">Layout</h1>
       </div>
+    </div>
 
-      <!-- Tabs -->
-      <div class="tabs is-boxed is-centered is-tabs-menu" id="nav">
-        <ul>
-          <li data-target="container_tab" id="container">
-            <a>Container</a>
-          </li>
-          <li data-target="level_tab" id="level">
-            <a>Level</a>
-          </li>
-          <li data-target="media-object_tab" id="media-object">
-            <a>Media Object</a>
-          </li>
-          <li data-target="hero_tab" id="hero">
-            <a>Hero</a>
-          </li>
-          <li data-target="section_tab" id="section">
-            <a>Section</a>
-          </li>
-          <li data-target="footer_tab" id="footer">
-            <a>Footer</a>
-          </li>
-          <li data-target="tiles_tab" id="tiles">
-            <a>Tiles</a>
-          </li>
-        </ul>
+    <!-- Tabs -->
+    <div class="tabs is-boxed is-centered is-tabs-menu" id="nav">
+      <ul>
+        <li data-target="container_tab" id="container">
+          <a>Container</a>
+        </li>
+        <li data-target="level_tab" id="level">
+          <a>Level</a>
+        </li>
+        <li data-target="media-object_tab" id="media-object">
+          <a>Media Object</a>
+        </li>
+        <li data-target="hero_tab" id="hero">
+          <a>Hero</a>
+        </li>
+        <li data-target="section_tab" id="section">
+          <a>Section</a>
+        </li>
+        <li data-target="footer_tab" id="footer">
+          <a>Footer</a>
+        </li>
+        <li data-target="tiles_tab" id="tiles">
+          <a>Tiles</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Tab content -->
+    <div class="tab-content">
+      <div class="container">
+        <div class="tab-pane" id="container_tab" include-html="layout/container.html"></div>
+        <div class="tab-pane" id="level_tab" include-html="layout/level.html"></div>
+        <div class="tab-pane" id="media-object_tab" include-html="layout/media-object.html"></div>
+        <div class="tab-pane" id="hero_tab" include-html="layout/hero.html"></div>
+        <div class="tab-pane" id="section_tab" include-html="layout/section.html"></div>
+        <div class="tab-pane" id="footer_tab" include-html="layout/footer.html"></div>
+        <div class="tab-pane" id="tiles_tab" include-html="layout/tiles.html"></div>
       </div>
+    </div>
+  </section>
 
-      <!-- Tab content -->
-      <div class="tab-content">
-        <div class="container">
-          <div class="tab-pane" id="container_tab" include-html="layout/container.html"></div>
-          <div class="tab-pane" id="level_tab" include-html="layout/level.html"></div>
-          <div class="tab-pane" id="media-object_tab" include-html="layout/media-object.html"></div>
-          <div class="tab-pane" id="hero_tab" include-html="layout/hero.html"></div>
-          <div class="tab-pane" id="section_tab" include-html="layout/section.html"></div>
-          <div class="tab-pane" id="footer_tab" include-html="layout/footer.html"></div>
-          <div class="tab-pane" id="tiles_tab" include-html="layout/tiles.html"></div>
-        </div>
-      </div>
-    </section>
+  <script src="scripts.js"></script>
+</body>
 
-    <script src="scripts.js"></script>
-  </body>
 </html>
