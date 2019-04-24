@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CTStyle</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <link rel="stylesheet" href="../css/ctstyle.css">
-    <link rel="stylesheet" href="styles.css">
-  </head>
 
-  <body>
-    <header include-html="includes/header.html"></header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CTStyle</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="ctstyle.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-    <section class="has-background-danger">
+<body>
+  <header include-html="_header.html"></header>
+
+  <section class="has-background-danger">
+    <div class="container">
       <div class="section">
-        <div class="container">
-          <h1 class="title has-text-white">Form</h1>
-        </div>
+        <h1 class="title has-text-white">Form</h1>
       </div>
+    </div>
 
-      <!-- Tabs -->
-      <div class="tabs is-boxed is-centered is-tabs-menu" id="nav">
-        <ul>
-          <li data-target="general_tab" id="general">
-            <a>General</a>
-          </li>
-          <li data-target="input_tab" id="input">
-            <a>Input</a>
-          </li>
-          <li data-target="textarea_tab" id="textarea">
-            <a>Textarea</a>
-          </li>
-          <li data-target="select_tab" id="select">
-            <a>Select</a>
-          </li>
-          <li data-target="checkbox_tab" id="checkbox">
-            <a>Checkbox</a>
-          </li>
-          <li data-target="radio_tab" id="radio">
-            <a>Radio</a>
-          </li>
-          <li data-target="file_tab" id="file">
-            <a>File</a>
-          </li>
-        </ul>
+    <!-- Tabs -->
+    <div class="tabs is-boxed is-centered is-tabs-menu" id="nav">
+      <ul>
+        <li data-target="general_tab" id="general">
+          <a>General</a>
+        </li>
+        <li data-target="input_tab" id="input">
+          <a>Input</a>
+        </li>
+        <li data-target="textarea_tab" id="textarea">
+          <a>Textarea</a>
+        </li>
+        <li data-target="select_tab" id="select">
+          <a>Select</a>
+        </li>
+        <li data-target="checkbox_tab" id="checkbox">
+          <a>Checkbox</a>
+        </li>
+        <li data-target="radio_tab" id="radio">
+          <a>Radio</a>
+        </li>
+        <li data-target="file_tab" id="file">
+          <a>File</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Tab content -->
+    <div class="tab-content">
+      <div class="container">
+        <div class="tab-pane" id="general_tab" include-html="form/general.html"></div>
+        <div class="tab-pane" id="input_tab" include-html="form/input.html"></div>
+        <div class="tab-pane" id="textarea_tab" include-html="form/textarea.html"></div>
+        <div class="tab-pane" id="select_tab" include-html="form/select.html"></div>
+        <div class="tab-pane" id="checkbox_tab" include-html="form/checkbox.html"></div>
+        <div class="tab-pane" id="radio_tab" include-html="form/radio.html"></div>
+        <div class="tab-pane" id="file_tab" include-html="form/file.html"></div>
       </div>
+    </div>
+  </section>
 
-      <!-- Tab content -->
-      <div class="tab-content">
-        <div class="container">
-          <div class="tab-pane" id="general_tab" include-html="form/general.html"></div>
-          <div class="tab-pane" id="input_tab" include-html="form/input.html"></div>
-          <div class="tab-pane" id="textarea_tab" include-html="form/textarea.html"></div>
-          <div class="tab-pane" id="select_tab" include-html="form/select.html"></div>
-          <div class="tab-pane" id="checkbox_tab" include-html="form/checkbox.html"></div>
-          <div class="tab-pane" id="radio_tab" include-html="form/radio.html"></div>
-          <div class="tab-pane" id="file_tab" include-html="form/file.html"></div>
-        </div>
-      </div>
-    </section>
+  <script src="scripts.js"></script>
+</body>
 
-    <script src="scripts.js"></script>
-  </body>
 </html>

@@ -1,21 +1,32 @@
 {
   "name": "@ctvoicer/ctstyle",
-  "version": "1.1.1",
-  "description": "A Bulma CSS framework customization for CTVoicer products",
-  "author": "CTVoicer <contato@ctvoicer.com.br>",
-  "main": "css/ctstyle.css",
+  "version": "2.0.0",
+  "description": "Uma customização do framework CSS Bulma para os produtos CTVoicer.",
+  "author": "CTVoicer <webmaster@ctvoicer.com.br>",
+  "private": true,
   "scripts": {
-    "build": "node-sass --output-style compact sass/ctstyle.sass css/ctstyle.css --importer=node_modules/node-sass-tilde-importer",
-    "start": "npm run build -- --watch",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "standard-version"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch",
+    "docs": "cp ./dist/ctstyle.css ./docs/ctstyle.css && http-server ./docs -c-1 -p 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git@ssh.dev.azure.com:v3/CTVoicer/CTStyle/ctstyle"
+  },
+  "main": "./dist/ctstyle.css",
   "dependencies": {
     "bulma": "^0.7.4"
   },
   "devDependencies": {
+    "css-loader": "^2.1.1",
+    "http-server": "^0.11.1",
+    "mini-css-extract-plugin": "^0.6.0",
     "node-sass": "^4.11.0",
-    "node-sass-tilde-importer": "^1.0.2",
-    "standard-version": "^5.0.2"
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
   }
 }
