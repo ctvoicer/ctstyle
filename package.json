@@ -3,7 +3,24 @@
   "version": "0.4.0",
   "description": "Uma customização do framework CSS Bulma para os produtos CTVoicer.",
   "author": "CTVoicer <contato@ctvoicer.com.br>",
-  "private": true,
+  "license": "UNLICENSED",
+  "keywords": [
+    "css",
+    "sass",
+    "flexbox",
+    "responsive",
+    "framework"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@ssh.dev.azure.com:v3/CTVoicer/CTStyle/ctstyle"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "main": "./dist/ctstyle.css",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack --mode development --watch",
@@ -11,12 +28,6 @@
     "serve": "cross-env NODE_ENV=production npm run build && npm run link && http-server ./docs -c-1 -p 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "repository": {
-    "type": "git",
-    "url": "git@ssh.dev.azure.com:v3/CTVoicer/CTStyle/ctstyle"
-  },
-  "main": "./dist/ctstyle.css",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.8.1",
     "bulma": "^0.7.4",
