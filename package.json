@@ -26,7 +26,8 @@
     "dev": "cross-env NODE_ENV=development webpack --mode development --watch",
     "link": "[ -L ./docs/assets ] || ln -s ../dist ./docs/assets",
     "serve": "cross-env NODE_ENV=production npm run build && npm run link && http-server ./docs -c-1 -p 3000",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.8.1",
@@ -40,6 +41,7 @@
     "node-sass": "^4.11.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "sass-loader": "^7.1.0",
+    "standard-version": "^5.0.2",
     "style-loader": "^0.23.1",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.1"
