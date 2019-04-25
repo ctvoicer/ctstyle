@@ -38,7 +38,7 @@ npm run dev
 ## Feito com
 
 - [Bulma](https://bulma.io) - Framework CSS
-- [Webpack](https://webpack.js.org) - Empacotados de assets
+- [Webpack](https://webpack.js.org) - Empacotador de assets
 
 ## Versionando
 
