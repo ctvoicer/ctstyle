@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [1.2.0](https://ssh.dev.azure.com/v3/CTVoicer/CTStyle/ctstyle/compare/v1.1.1...v1.2.0) (2019-04-25)
+
+
+### Bug Fixes
+
+* 🐛 corrige o estilo do logo sem link na navbar ([bc0f26f](https://ssh.dev.azure.com/v3/CTVoicer/CTStyle/ctstyle/commits/bc0f26f))
+
+
+### Features
+
+* 🎸 adiciona o FontAwesome ao projeto ([bd69b99](https://ssh.dev.azure.com/v3/CTVoicer/CTStyle/ctstyle/commits/bd69b99))
+
+
+### Performance Improvements
+
+* ⚡️ instala o minificador de CSS ([53a37bf](https://ssh.dev.azure.com/v3/CTVoicer/CTStyle/ctstyle/commits/53a37bf))
+
+
+
 ## [1.1.1](/compare/v1.1.0...v1.1.1) (2019-04-16)
 
 
