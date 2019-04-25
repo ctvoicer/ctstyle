@@ -5,10 +5,10 @@
   "author": "CTVoicer <contato@ctvoicer.com.br>",
   "private": true,
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack --mode development --watch",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack --mode development --watch",
     "link": "[ -L ./docs/assets ] || ln -s ../dist ./docs/assets",
-    "serve": "npm run build && npm run link && http-server ./docs -c-1 -p 3000",
+    "serve": "cross-env NODE_ENV=production npm run build && npm run link && http-server ./docs -c-1 -p 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -21,7 +21,11 @@
     "bulma": "^0.7.4"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.1",
+    "clean-webpack-plugin": "^2.0.1",
+    "cross-env": "^5.2.0",
     "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
     "http-server": "^0.11.1",
     "mini-css-extract-plugin": "^0.6.0",
     "node-sass": "^4.11.0",
