@@ -1,6 +1,6 @@
 {
   "name": "@ctvoicer/ctstyle",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Uma customização do framework CSS Bulma para os produtos CTVoicer.",
   "author": "CTVoicer <contato@ctvoicer.com.br>",
   "license": "UNLICENSED",
@@ -27,7 +27,7 @@
     "link": "[ -L ./docs/assets ] || ln -s ../dist ./docs/assets",
     "serve": "cross-env NODE_ENV=production npm run build && npm run link && http-server ./docs -c-1 -p 3000",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "standard-version"
+    "release": "standard-version --commit-all --message \"chore(release): 🤖 %s\""
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.10.1",
