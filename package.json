@@ -30,7 +30,7 @@
     "release": "standard-version"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.9.0",
+    "@fortawesome/fontawesome-free": "^5.10.1",
     "bulma": "^0.7.5",
     "clean-webpack-plugin": "^2.0.2",
     "cross-env": "^5.2.0",
@@ -43,7 +43,7 @@
     "sass-loader": "^7.1.0",
     "standard-version": "^5.0.2",
     "style-loader": "^0.23.1",
-    "webpack": "^4.35.2",
-    "webpack-cli": "^3.3.5"
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
   }
 }
