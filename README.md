@@ -42,7 +42,7 @@ npm run dev
 
 ## Versionando
 
-Este projeto utiliza o protocolo proposto pelo [SemVer](http://semver.org/) para versionamento. Para ver todas as versões disponíveis, acesse a [página de tags do repositório](https://dev.azure.com/CTVoicer/CTStyle/_git/ctstyle/tags).
+Este projeto utiliza o protocolo proposto pelo [SemVer](http://semver.org/) para versionamento. Para ver todas as versões disponíveis, acesse a [página de tags do repositório](https://github.com/ctvoicer/ctstyle/releases).
 
 ## Autores
 

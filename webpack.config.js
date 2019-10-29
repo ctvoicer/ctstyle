@@ -23,27 +23,35 @@ module.exports = {
     }),
     new OptimizeCssAssetsPlugin({
       cssProcessorPluginOptions: {
-        preset: ['default', {
-          discardComments: {
-            removeAll: true
+        preset: [
+          'default',
+          {
+            discardComments: {
+              removeAll: true
+            }
           }
-        }]
+        ]
       }
     })
   ],
   module: {
-    rules: [{
-      test: /\.(sa|sc|c)ss$/,
-      use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
-    }, {
-      test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-      use: [{
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]',
-          outputPath: 'fonts/'
-        }
-      }]
-    }]
+    rules: [
+      {
+        test: /\.(sa|sc|c)ss$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
+      }
+    ]
   }
 }

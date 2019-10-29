@@ -1,1 +1,1 @@
-require('./ctstyle.sass')
+require("./ctstyle.sass");
