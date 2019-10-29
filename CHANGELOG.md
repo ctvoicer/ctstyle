@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/ctvoicer/ctstyle/compare/v0.5.2...v0.6.0) (2019-10-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* O FontAwesome foi removido do projeto. A partir de agora, caso deseje usá-lo, ele deve ser instalado à parte.
+
+### Features
+
+* 🎸 Upgrade do Bulma para a versão 0.8 ([8f73238](https://github.com/ctvoicer/ctstyle/commit/8f73238))
+
+
+* 💡 FontAwesome removido do projeto ([fd6f212](https://github.com/ctvoicer/ctstyle/commit/fd6f212))
+
 ### [0.5.2](https://github.com/ctvoicer/ctstyle/compare/v0.5.1...v0.5.2) (2019-09-06)
 
 
