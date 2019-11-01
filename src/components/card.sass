@@ -1,8 +1,0 @@
-@each $color in $colors
-  $colorName: nth($color, 1)
-  $colorValues: nth($color, 2)
-  $colorBg: nth($colorValues, 1)
-  $colorText: nth($colorValues, 2)
-  .card-header-title.is-#{$colorName}
-    background-color: $colorBg
-    color: $colorText

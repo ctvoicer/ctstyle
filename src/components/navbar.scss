@@ -1,0 +1,28 @@
+$navbar-height: 4.4rem;
+$navbar-item-img-max-height: 2.125rem;
+
+$navbar-dropdown-radius: $radius-small;
+$navbar-dropdown-boxed-radius: $radius-small;
+
+.navbar {
+  .navbar-item,
+  .navbar-link {
+    padding: 1rem 2.25rem;
+    text-transform: uppercase;
+  }
+  &.is-footer {
+    .navbar-item,
+    .navbar-link {
+      padding: 1.2rem 1rem;
+    }
+  }
+}
+
+.navbar-brand {
+  .navbar-item {
+    strong {
+      font-size: $size-5;
+      color: currentColor;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@mixin border-rounded {
+  border-radius: $radius-rounded;
+}
+
+.is-rounded {
+  @include border-rounded;
+}
+
+@import "spacing";

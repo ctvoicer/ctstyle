@@ -1,0 +1,85 @@
+$primary: $blue;
+
+$info: $blue-bis;
+$success: $green; // Valor original
+$warning: $orange;
+$danger: $red; // Valor original
+
+$light: $white-ter; // Valor original
+$dark: $black-ter;
+
+// Invert colors
+
+$orange-invert: findColorInvert($orange); // Valor original
+$yellow-invert: findColorInvert($yellow); // Valor original
+$green-invert: findColorInvert($green); // Valor original
+$turquoise-invert: findColorInvert($turquoise); // Valor original
+$cyan-invert: findColorInvert($cyan); // Valor original
+$blue-invert: findColorInvert($blue); // Valor original
+$blue-bis-invert: findColorInvert($blue-bis);
+$purple-invert: findColorInvert($purple); // Valor original
+$red-invert: findColorInvert($red); // Valor original
+
+$primary-invert: $blue-invert;
+$info-invert: $cyan-invert; // Valor original
+$success-invert: $green-invert; // Valor original
+$warning-invert: $orange-invert; // Valor original
+$danger-invert: $red-invert; // Valor original
+$light-invert: $dark; // Valor original
+$dark-invert: $light; // Valor original
+
+// General colors
+
+$background: $white-ter; // Valor original
+
+$border: $grey-lighter; // Valor original
+$border-hover: $grey-light; // Valor original
+
+// Text colors
+
+$text: $grey-dark; // Valor original
+$text-invert: findColorInvert($text); // Valor original
+$text-light: $grey; // Valor original
+$text-strong: $grey-darker; // Valor original
+
+// Code colors
+
+$code: $red; // Valor original
+$code-background: $background; // Valor original
+
+$pre: $text; // Valor original
+$pre-background: $background; // Valor original
+
+// Link colors
+
+$link: $cyan;
+$link-invert: $cyan-invert;
+$link-visited: $purple; // Valor original
+
+$link-hover: $red;
+$link-hover-border: $red;
+
+$link-focus: $grey-darker; // Valor original
+$link-focus-border: $blue; // Valor original
+
+$link-active: $grey-darker; // Valor original
+$link-active-border: $grey-dark; // Valor original
+
+// Typography
+
+$family-primary: $family-sans-serif; // Valor original
+$family-code: $family-monospace; // Valor original
+
+$size-small: $size-7; // Valor original
+$size-normal: $size-6; // Valor original
+$size-medium: $size-5; // Valor original
+$size-large: $size-4; // Valor original
+
+// Lists and maps
+$custom-colors: ("blue-bis": ($blue-bis, $blue-bis-invert));
+$custom-shades: null; // Valor original
+
+$colors: mergeColorMaps(("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert), "link": ($link, $link-invert), "info": ($info, $info-invert), "success": ($success, $success-invert), "warning": ($warning, $warning-invert), "danger": ($danger, $danger-invert)), $custom-colors); // Valor original
+$shades: mergeColorMaps(("black-bis": $black-bis, "black-ter": $black-ter, "grey-darker": $grey-darker, "grey-dark": $grey-dark, "grey": $grey, "grey-light": $grey-light, "grey-lighter": $grey-lighter, "white-ter": $white-ter, "white-bis": $white-bis), $custom-shades); // Valor original
+
+$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7; // Valor original
